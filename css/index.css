@@ -1,0 +1,527 @@
+body{
+    margin: 0;
+}
+
+body.lock{
+    overflow-y: hidden;
+}
+
+.none{
+    display: none !important;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: calc(100% - 350px * 2);
+    height: fit-content;
+    margin: 30px auto;
+}
+
+
+
+
+form .form_block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+
+
+
+form .form_block h5{
+    color: #262626;
+    font-size: 20px;
+    font-family: "Roboto-Medium", sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+
+form .form_block .block_inputs{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+form .form_block .block_inputs.radio{
+    gap: 30px;
+}
+
+
+
+form .form_block .block_inputs._error{
+    padding-bottom: 30px;
+}
+
+form .form_block .block_inputs .error_text{
+    color: #EB5757;
+    font-size: 18px;
+    font-family: "Roboto-Medium", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5px;
+    left: 1px;
+    margin: 0;
+}
+
+form .form_block .block_inputs .error_text.first{
+    left: 1px;
+}
+
+form .form_block .block_inputs .error_text.second{
+    left: calc(50% + 12px);
+}
+
+
+
+form .form_block .block_inputs .button_delete{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 23px;
+    right: -40px;
+}
+
+form .form_block#period-4 .block_inputs .button_delete{
+    right: -120px;
+}
+
+form .form_block .block_inputs .button_delete img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+form .form_block .block_inputs .block_select{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+
+    transition: all .5s ease;
+}
+
+
+form .form_block .block_inputs .block_select label{
+    width: 30px;
+    font-size: 18px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 13px;
+    z-index: 2;
+}
+
+
+form .form_block .block_inputs .block_select .select::before{
+    content: "";
+    width: 20px;
+    height: 15px;
+    background: url("../img/select/icon_select_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+form .form_block .block_inputs .block_select .select::after{
+    content: "";
+    width: 20px;
+    height: 15px;
+    background: url("../img/select/icon_select_arrow_active.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    pointer-events: none;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+form .form_block .block_inputs .block_select .select._active::after{
+    opacity: 1;
+}
+
+
+form .form_block .block_inputs .block_select .select .select__head{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 12px);
+    height: 50px;
+    color: #262626;
+    font-size: 20px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 500;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+    background-color: #ffffff00;
+    margin-top: 8px;
+    padding: 0 0 0 10px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+form .form_block .block_inputs._error .block_select .select .select__head{
+    color: #EB5757;
+}
+
+form .form_block .block_inputs .block_select .select .select__head::placeholder{
+    opacity: 1;
+    color: #D0D0D0;
+}
+
+form .form_block .block_inputs._error .block_select .select .select__head::placeholder{
+    color: #EB5757;
+}
+
+
+
+form .form_block .block_inputs .additional_check_mark{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    position: absolute;
+    gap: 5px;
+    top: 20px;
+    right: -80px;
+}
+
+form .form_block .block_inputs .additional_check_mark span{
+    color: #262626;
+    font-size: 18px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+}
+
+form .form_block .block_inputs .additional_check_mark input[type="checkbox"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #B3EAAA;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form .form_block .block_inputs .additional_check_mark input[type="checkbox"]:checked{
+    background-color: #5CB44E;
+}
+
+form .form_block .block_inputs .additional_check_mark input[type="checkbox"]:checked::before{
+    content: "";
+    width: 14px;
+    height: 12px;
+    background: url("../img/period/icon_checkbox_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 5;
+    margin-top: 1px;
+}
+
+
+
+form .form_block .block_inputs .graph_year{
+    color: #262626;
+    font-size: 20px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    margin: auto 0;
+}
+
+
+
+form .form_block .block_inputs .input_text{
+    width: calc(50% - 25px);
+    height: 50px;
+    position: relative;
+}
+
+form .form_block .block_inputs .input_text.with_select_date{
+    width: 100%;
+    margin-top: 8px;
+}
+
+form .form_block .block_inputs .input_text input{
+    width: 100%;
+    height: 100%;
+    color: #262626;
+    font-size: 20px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+form .form_block .block_inputs .input_text label{
+    width: 30px;
+    font-size: 18px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    left: 13px;
+    z-index: 2;
+}
+
+
+
+form .form_block .block_inputs .input_radio{
+    display: flex;
+    align-items: center;
+}
+
+form .form_block .block_inputs .input_radio input[type="radio"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D0D0D0;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+form .form_block .block_inputs .input_radio input[type="radio"]:checked{
+    border: 1px solid #5CB44E;
+}
+
+form .form_block .block_inputs .input_radio input[type="radio"]::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #D0D0D0;
+    opacity: 1;
+}
+
+form .form_block .block_inputs .input_radio input[type="radio"]:checked::before{
+    background-color: #5CB44E;
+}
+
+form .form_block .block_inputs .input_radio label{
+    color: #262626;
+    font-size: 20px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+
+form .form_block .button_add_block_inputs{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+}
+
+form .form_block .button_add_block_inputs a{
+    display: inline-flex;
+    align-items: center;
+    color: #262626;
+    font-size: 18px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 35px;
+    position: relative;
+
+    opacity: .7;
+    transition: all .3s ease;
+}
+
+form .form_block .button_add_block_inputs._active a{
+    opacity: 1;
+}
+
+form .form_block .button_add_block_inputs a::before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    background: url("../img/select/icon_button_add.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+form .form_block .button_add_block_inputs a::after{
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    background: url("../img/select/icon_button_add_active.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+form .form_block .button_add_block_inputs._active a::after{
+    opacity: 1;
+}
+
+
+
+
+
+
+form .buttom_result{
+    display: flex;
+    justify-content: center;
+}
+
+form .buttom_result a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 398px;
+    height: 50px;
+    color: #5CB44E;
+    font-size: 20px;
+    font-family: "Roboto-Medium", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #B3EAAA;
+    box-shadow: 0 0 20px rgba(101, 219, 125, 0.7);
+
+    transition: all .3s ease;
+}
+
+form .buttom_result a._active{
+    color: white;
+    background-color: #5CB44E;
+}
+
+form .buttom_result a._active:active{
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+
+
+
+
+form .checkbox_rules{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+form .checkbox_rules input[type="checkbox"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    border: 1px solid #262626;
+    cursor: pointer;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form .checkbox_rules input[type="checkbox"]:checked{
+    border: 1px solid #5CB44E;
+}
+
+form .checkbox_rules input[type="checkbox"]:checked::before{
+    content: "\2714";
+    color: #5CB44E;
+    font-family: "Roboto-Media", sans-serif;
+    position: absolute;
+}
+
+
+form .checkbox_rules label{
+    color: #262626;
+    font-size: 16px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+}
+
+form .checkbox_rules label span{
+    color: #5CB44E;
+    cursor: pointer;
+    position: relative;
+}
+
+form .checkbox_rules label span::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #5CB44E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(5px);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+form .checkbox_rules label span:hover::before{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+form .checkbox_rules .error_text{
+    color: #EB5757;
+    font-size: 16px;
+    font-family: "Roboto-Medium", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    bottom: -25px;
+    margin: 0;
+}
