@@ -1,0 +1,390 @@
+@media only screen and (min-width : 3001px){
+    form{
+        width: 1200px !important;
+    }
+}
+
+@media only screen and (min-width : 2301px){
+    form{
+        width: 1200px;
+        margin: 30px auto;
+        gap: 60px;
+    }
+
+
+    form .head_href{
+        font-size: 34px;
+        padding-left: 45px;
+    }
+    
+    form .head_href span{
+        width: 27px;
+        height: 24px;
+    }
+
+
+    form .form_block h5{
+        font-size: 28px;
+    }
+
+
+    form .form_block .block_inputs.radio {
+        gap: 40px;
+    }
+
+    form .form_block .block_inputs .input_radio input[type="radio"] {
+        width: 40px;
+        height: 40px;
+    }
+
+    form .form_block .block_inputs .input_radio input[type="radio"]::before {
+        width: 19px;
+        height: 19px;
+    }
+
+    form .form_block .block_inputs .input_radio label {
+        font-size: 28px;
+    }
+
+
+    
+    form .form_block .block_inputs .block_select{
+        height: 80px;
+    }
+
+    form .form_block .block_inputs .block_select label {
+        width: 40px;
+        font-size: 26px;
+        top: -5px;
+    }
+
+    form .form_block .block_inputs .block_select .select .select__head{
+        height: 70px;
+        font-size: 28px;
+    }
+
+    form .form_block .block_inputs .block_select .select::before{
+        width: 30px;
+        height: 25px;
+        top: 35px;
+    }
+
+    form .form_block .block_inputs .block_select .select::after{
+        width: 30px;
+        height: 25px;
+        top: 35px;
+    }
+
+    form .form_block .block_inputs .block_select .select .select__calendar{
+        top: 90px;
+    }
+
+
+    form .form_block .block_inputs .block_select .select .select__list {
+        max-height: 200px;
+    }
+
+    form .form_block .block_inputs .block_select .select .select__list li {
+        height: 50px;
+        min-height: 50px;
+        font-size: 26px;
+    }
+
+
+    form .form_block .block_inputs .input_text{
+        height: 70px;
+    }
+
+    form .form_block .block_inputs .input_text input{
+        font-size: 28px;
+    }
+
+    form .form_block .block_inputs .input_text label{
+        width: 40px;
+        font-size: 26px;
+        top: -10px;
+    }
+
+
+    form .form_block .block_inputs .graph_year {
+        font-size: 28px;
+    }
+
+
+    form .form_block .block_inputs .error_text{
+        font-size: 26px;
+        bottom: -5px;
+    }
+
+
+    form .form_block .button_add_block_inputs {
+        bottom: -55px;
+    }
+
+    form .form_block .button_add_block_inputs a{
+        font-size: 26px;
+    }
+
+    form .form_block .button_add_block_inputs a::before{
+        width: 28px;
+        height: 28px;
+    }
+
+    form .form_block .button_add_block_inputs a::after{
+        width: 28px;
+        height: 28px;
+    }
+
+
+    form .buttom_result a {
+        width: 550px;
+        height: 70px;
+        font-size: 28px;
+    }
+
+
+    form .checkbox_rules {
+        margin-bottom: 40px;
+    }
+
+    form .checkbox_rules input[type="checkbox"] {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        min-height: 30px;
+    }
+
+    form .checkbox_rules input[type="checkbox"]:checked::before{
+        font-size: 20px;
+    }
+
+    form .checkbox_rules label {
+        font-size: 24px;
+    }
+
+    form .checkbox_rules .error_text {
+        font-size: 24px;
+        bottom: -40px;
+    }
+
+
+    form .form_block .block_inputs .button_delete {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 27px;
+        right: -60px;
+    }
+
+    form .form_block#period-4 .block_inputs .button_delete {
+        right: -160px;
+    }
+
+
+    form .form_block .block_inputs .additional_check_mark {
+        gap: 15px;
+        top: 25px;
+        right: -110px;
+    }
+
+    form .form_block .block_inputs .additional_check_mark span {
+        font-size: 26px;
+    }
+
+    form .form_block .block_inputs .additional_check_mark input[type="checkbox"] {
+        width: 35px;
+        height: 35px;
+    }
+
+    form .form_block .block_inputs .additional_check_mark input[type="checkbox"]:checked::before {
+        width: 19px;
+        height: 18px;
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (min-width : 1800px) and (max-width : 2300px){
+    form{
+        width: 1000px;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width : 1400px){
+    form{
+        width: calc(100% - 300px * 2);
+    }
+}
+
+@media only screen and (max-width : 1280px){
+    form{
+        width: calc(100% - 224px * 2);
+    }
+}
+
+@media only screen and (max-width : 1100px){
+    form{
+        width: calc(100% - 130px * 2);
+    }
+}
+
+@media only screen and (max-width : 900px){
+    form{
+        width: calc(100% - 80px * 2);
+    }
+
+    form .form_block .block_inputs .additional_check_mark {
+        right: -60px;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    form{
+        width: calc(100% - 40px * 2);
+    }
+
+
+    form .form_block .block_inputs._error{
+        padding-bottom: 50px;
+    }
+
+    form .form_block#period-4 .block_inputs{
+        margin-bottom: 25px;
+    }
+
+    form .form_block#period-4 .block_inputs:last-child{
+        margin-bottom: 0;
+    }
+
+
+    form .form_block .block_inputs .button_delete{
+        top: auto;
+        bottom: -30px;
+        right: 0;
+    }
+
+    form .form_block .block_inputs._error .button_delete{
+        bottom: 10px;
+    }
+
+    form .form_block#period-4 .block_inputs .button_delete{
+        bottom: -30px;
+        right: 50px;
+    }
+
+    form .form_block#period-4 .block_inputs._error .button_delete {
+        bottom: 10px;
+    }
+
+
+    form .form_block .block_inputs .additional_check_mark{
+        top: auto;
+        bottom: -30px;
+        right: 0;
+    }
+
+    form .form_block .block_inputs._error .additional_check_mark{
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    form .form_block .block_inputs{
+        flex-direction: column;
+    }
+
+    form .form_block .block_inputs.radio{
+        flex-direction: row;
+    }
+
+
+
+    form .form_block .block_inputs:nth-of-type(1) .block_select{
+        width: calc(100% + 15px) !important;
+    }
+
+    form .form_block#period-5 .block_inputs:nth-of-type(2) .block_select{
+        width: calc(100% + 15px) !important;
+    }
+
+    form .form_block .block_inputs .block_select{
+        width: calc(100% - 30px) !important;
+    }
+
+
+    form .form_block .block_inputs .input_text{
+        width: 100% !important;
+    }
+
+
+    form .form_block .block_inputs .error_text.second{
+        display: none;
+    }
+
+
+    form .form_block .block_inputs .button_delete{
+        top: 0 !important;
+        bottom: auto !important;
+        right: 0 !important;
+    }
+
+
+    form .form_block .block_inputs .additional_check_mark{
+        top: auto;
+        bottom: -40px;
+        right: 0;
+    }
+
+    form .form_block .block_inputs._error .additional_check_mark{
+        bottom: -35px;
+    }
+}
+
+@media only screen and (max-width : 400px){
+    form{
+        width: calc(100% - 20px * 2);
+    }
+
+
+    form .head_href{
+        font-size: 24px;
+        padding-left: 35px;
+    }
+    
+    form .head_href span{
+        width: 19px;
+        height: 16px;
+    }
+    
+
+
+    form .form_block .block_inputs:nth-of-type(1) .block_select{
+        width: 100% !important;
+    }
+
+    form .form_block#period-5 .block_inputs:nth-of-type(2) .block_select{
+        width: 100% !important;
+    }
+
+    form .form_block .block_inputs .block_select {
+        width: calc(100% - 30px) !important;
+    }
+
+    form .form_block .block_inputs .block_select .select::before {
+        right: 20px;
+    }
+
+    form .form_block .block_inputs .block_select .select::after {
+        right: 20px;
+    }
+
+
+    form .form_block .block_inputs .block_select .select .select__head{
+        width: calc(100% - 15px);
+    }
+
+
+    form .form_block .block_inputs .input_text {
+        width: calc(100% - 17px) !important;
+    }
+}
