@@ -416,4 +416,8 @@
     form .form_block .block_inputs .block_select .select::before {
         top: 33px;
     }
+
+    form .form_block .block_inputs .block_select .select::after {
+        top: 33px
+    }
 }
