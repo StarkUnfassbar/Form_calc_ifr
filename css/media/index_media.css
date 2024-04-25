@@ -403,4 +403,8 @@
     .button_add_block_inputs#add-graph-year {
         bottom: -45px;
     }
+
+    form .form_block .block_inputs .block_select .select .select__head {
+        height: 60px;
+    }
 }
