@@ -398,3 +398,9 @@
         font-size: 17px;
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .button_add_block_inputs#add-graph-year {
+        bottom: -45px;
+    }
+}
