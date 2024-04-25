@@ -404,6 +404,11 @@
         bottom: -45px;
     }
 
+    
+    form .form_block .block_inputs .block_select {
+        height: 70px;
+    }
+    
     form .form_block .block_inputs .block_select .select .select__head {
         height: 60px;
     }
