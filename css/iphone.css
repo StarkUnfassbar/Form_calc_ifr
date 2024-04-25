@@ -1,0 +1,20 @@
+.button_add_block_inputs#add-graph-year {
+    bottom: -45px;
+}
+
+
+form .form_block .block_inputs .block_select {
+    height: 70px;
+}
+
+form .form_block .block_inputs .block_select .select .select__head {
+    height: 60px;
+}
+
+form .form_block .block_inputs .block_select .select::before {
+    top: 33px;
+}
+
+form .form_block .block_inputs .block_select .select::after {
+    top: 33px
+}
